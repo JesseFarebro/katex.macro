@@ -1,0 +1,29 @@
+{
+  "name": "katex.macro",
+  "version": "0.0.1",
+  "description": "Babel macro to generate static KaTeX markup, no runtime needed.",
+  "main": "src/macro.js",
+  "scripts": {
+    "build": "npm run build:macro",
+    "build:macro": "microbundle -i src/macro.js -f cjs -o ./macro.js --target node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessefarebro/katex.macro.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jessefarebro/katex.macro/issues"
+  },
+  "homepage": "https://github.com/jessefarebro/katex.macro#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "microbundle": "^0.12.0"
+  },
+  "dependencies": {
+    "babel-plugin-macros": "^2.8.0",
+    "htmltojsx": "^0.3.0",
+    "katex": "^0.11.1"
+  }
+}
